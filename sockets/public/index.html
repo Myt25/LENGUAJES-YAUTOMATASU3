@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Aplicación con Sockets</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h1>Mi Chat</h1>
+    <div id="messages"></div>
+    
+    <br/>
+    <hr>
+<!--
+    <p>Cantidad de palabras enviadas: <em id="CantidadPalabra"></em><br>
+    Cantidad de vocales enviadas: <em id="CantidadVocal"></em><br>
+    Cantidad de mayusculas enviadas: <em id="CantidadMayuscula"></em></p>
+
+
+    <p>Cantidad de palabras Recibidas: <em id="CPR"></em><br>
+    Cantidad de vocales Recibidas: <em id="CVR"></em><br>
+    Cantidad de mayusculas Recibidas: <em id="CMR"></em></p>
+-->
+    <hr>
+    <form onsubmit="return addMessage(this)">
+        <input type="text" id="username" placeholder="Tu Nombre">
+        <input type="text" id="texto" placeholder="Cuéntanos algo...">
+        <input type="submit" value="Enviar!">
+    </form>
+</body>
+
+</html>
